@@ -11,6 +11,7 @@ texas lege
 - add urls
 - add views
 
+- fix gitignore
 - add forms
 - make it viewable (quality templates)
 - get a domain
