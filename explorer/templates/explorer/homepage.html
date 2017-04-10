@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends 'explorer/base.html' %}
+
+{% block content %}
+<div></div>
+{% for post in posts %}
+<!--<p>{{post.title}}</p>
+{% endfor %}
+<!-- Responsive table starts here -->
+<!-- For correct display on small screens you must add 'data-title' to each 'td' in your table -->
+<div class="table-responsive-vertical shadow-z-1">
+    <!-- Table starts here -->
+    <table id="table" class="table table-hover table-mc-light-blue">
+
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Title</th>
+            <th>Description</th>
+
+        </thead>
+        <style type="text/css">
+
+      .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #FFEBCD
+        }
+
+
+
+
+        </style>
+
+        {% for post in posts %}
+        <tr>
+            <td data-title="ID">{{ post.published_date }}</td>
+            <td data-title="Name"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></td>
+            <td data-title="Description" {{post.text|linebreaksbr }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
