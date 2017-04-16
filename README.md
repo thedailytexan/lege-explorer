@@ -3,6 +3,9 @@ The Daily Texan's Django app for tracking and explaining the TX lege
 
 Here's our TODO:
 texas lege
+
+Done:
+
 - leg directory
 - explorer directory
 - add favicon
@@ -10,10 +13,12 @@ texas lege
 - add models
 - add urls
 - add views
-
 - fix gitignore
 - add forms
-- make it viewable (quality templates)
+
+- make it viewable (quality templates) [ish]
+
+To Do:
 - get a domain
 - host it online
 
